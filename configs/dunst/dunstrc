@@ -1,0 +1,26 @@
+[global]
+transparency = 0              # Let Picom handle transparency
+frame_width = 1               # Thin border
+separator_height = 1
+max_icon_size = 64
+font = pango:monospace 8 9
+
+[urgency_low]
+background = "#1e1e2e14"      # Transparent background
+foreground = "#ffffff"
+frame_color = "#00ff00"       # Green frame
+timeout = 5
+
+[urgency_normal]
+background = "#1e1e2e0f"      # More transparent (AA ≈ 67% opacity)
+foreground = "#ffffff"
+frame_color = "#222831"
+timeout = 5
+
+
+[urgency_critical]
+background = "#1e1e2e0f"
+foreground = "#ffffff"
+frame_color = "#ff0033"       # Red frame
+timeout = 0                   # Stays until dismissed
+
